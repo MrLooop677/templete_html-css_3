@@ -1,0 +1,567 @@
+/*start main rules */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+}
+
+.content {
+    width: 33.33333333%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*start main rules */
+
+
+/*start header */
+
+
+/* start navbar*/
+
+.header .navbar {
+    background: #360836;
+    text-align: center;
+    padding: 2px;
+    height: 50px;
+}
+
+.header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header .navbar ul li {
+    padding-right: 25px;
+    font-size: 20px;
+    ;
+}
+
+.header .navbar ul li a {
+    text-decoration: none;
+    color: #F2043B;
+}
+
+.header .navbar ul li .active {
+    color: #fff;
+}
+
+
+/* end navbar*/
+
+
+/* start slidbar*/
+
+.header .slidbar {
+    background-color: #F2043B;
+    text-align: center;
+    background-image: url("../imges/cover.PNG");
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.header .slidbar>div:first-child {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.header .slidbar h1 {
+    margin-top: 0;
+    font-size: 50px;
+    ;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header .slidbar p:first-of-type {
+    color: #fff;
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+.header .slidbar .content {
+    margin-top: 20px;
+}
+
+.header .slidbar span {
+    background: #fff;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 10px;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.header .slidbar p:last-of-type {
+    margin-top: 80px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.header .slidbar .work {
+    background-color: #FF0048;
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    padding: 7px;
+    bottom: 0;
+    left: 44%;
+    font-size: large;
+    color: #fff;
+    text-align: center;
+}
+
+.header .slidbar .work::after {
+    content: "";
+    position: absolute;
+    border-top: 20px solid #ff0048;
+    /*  عند عمل بوردر  بدون ما اديله  عرض هيعملى اربع مثلثات ف الاربع اتجاهات بتوع البوردر*/
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    height: 20px;
+    bottom: -38px;
+    left: 38%;
+}
+
+
+/* end slidbar*/
+
+
+/*end header */
+
+
+/*start portfolio */
+
+.portfolio .imges {
+    overflow: hidden;
+}
+
+.portfolio .imges>div {
+    width: 25%;
+    float: left;
+}
+
+.portfolio .imges img {
+    height: 100%;
+    width: 95%;
+    padding: 3px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 10px;
+}
+
+.portfolio .imges img:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.nav {
+    background-color: #FF0048;
+    text-align: center;
+    position: relative;
+}
+
+.nav p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav::after {
+    position: relative;
+    content: "";
+    position: absolute;
+    border-top: 20px solid #ff0048;
+    /*  عند عمل بوردر  بدون ما اديله  عرض هيعملى اربع مثلثات ف الاربع اتجاهات بتوع البوردر*/
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    height: 20px;
+    bottom: -38px;
+    left: 48%;
+}
+
+
+/*end portfolio */
+
+
+/*start viewer */
+
+.viewer .content {
+    text-align: center;
+}
+
+
+/*end viewer */
+
+
+/*start viewer*/
+
+.viewer {
+    text-align: center;
+}
+
+.viewer h1 {
+    margin: 0;
+    padding-bottom: 8%;
+    padding-top: 3.5%;
+    color: #FF0048;
+    font-size: 40px;
+}
+
+.viewer .imges {
+    overflow: hidden;
+}
+
+.viewer .imges .img_part_1 {
+    width: 100%;
+    ;
+    overflow: hidden;
+}
+
+.viewer .imges .img_part_1 .img_1 {
+    width: 30%;
+    background-image: url(../imges/Person_1.JPG);
+    height: 400px;
+    float: left;
+    margin-left: 18%;
+    background-size: cover;
+}
+
+.viewer .imges .img_part_1 .img_2 {
+    width: 30%;
+    background-image: url(../imges/Person_2.JPG);
+    height: 400px;
+    float: left;
+    margin-left: 8px;
+    background-size: cover;
+}
+
+.viewer .imges .img_part_2 {
+    overflow: hidden;
+    width: 100%;
+}
+
+.viewer .imges .img_part_2 .img_3 {
+    width: 30%;
+    background-image: url(../imges/Person_3.JPG);
+    height: 400px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 18%;
+    background-size: cover;
+}
+
+.viewer .imges .img_part_2 .img_4 {
+    width: 30%;
+    background-image: url(../imges/Person_1.JPG);
+    height: 400px;
+    float: left;
+    margin-left: 8px;
+    margin-top: 30px;
+    background-size: cover;
+}
+
+.viewer .imges h2 {
+    color: #FF365E;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.viewer .imges .dx {
+    overflow: hidden;
+    width: 100%;
+}
+
+.viewer .dx_1 .txt_1,
+.viewer .dx_2 .txt_1 {
+    float: left;
+    width: 30%;
+    margin-left: 18%;
+}
+
+.viewer .dx_1 .txt_2,
+.viewer .dx_2 .txt_2 {
+    float: left;
+    width: 30%;
+    margin-left: 8px;
+}
+
+.viewer .over {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+}
+
+.img_1:hover .over {
+    opacity: 1;
+}
+
+.img_2:hover .over {
+    opacity: 1;
+}
+
+.img_3:hover .over {
+    opacity: 1;
+}
+
+.img_4:hover .over {
+    opacity: 1;
+}
+
+.viewer button {
+    width: 160px;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 10px 10px 10px;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+
+/* end viewer*/
+
+
+/*start footer*/
+
+.footer {
+    background-image: url(../imges/cover_2.JPG );
+    background-size: cover;
+    color: #fff;
+    height: 20%;
+    position: relative;
+}
+
+.footer .foo {
+    position: relative;
+    top: 21%;
+    text-align: center;
+}
+
+.footer .con_1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer .con_2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer .con_1 .tex_1 {
+    margin-left: 18%;
+    float: left;
+    text-align: center;
+    width: 30%;
+}
+
+.footer .con_2 .tex_1 {
+    margin-left: 18%;
+    float: left;
+    text-align: center;
+    width: 30%;
+}
+
+.footer .con_1 .tex_2 {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-left: 10%;
+    width: 30%;
+}
+
+.footer .con_2 .tex_2 {
+    float: left;
+    text-align: center;
+    margin-left: 10%;
+    width: 30%;
+}
+
+.footer h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer .foo button {
+    margin-top: 10%;
+    width: 200px;
+    padding: 18px;
+}
+
+.footer .foo .s {
+    margin-top: 10%;
+}
+
+.footer .foo .s .s_1 {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: blanchedalmond;
+}
+
+.copyright {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background: #dedddd;
+    line-height: 80px;
+    font-size: 25px;
+}
+
+
+/* start page contact-me*/
+
+
+/*start slider*/
+
+.slider {
+    background-image: url("../imges/coverPage2.png");
+    background-size: cover;
+    height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.slider h2:first-of-type {
+    padding-top: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-weight: 550;
+    width: 100%;
+}
+
+.slider h2:last-of-type {
+    color: #F20438;
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.slider input,
+.textarea {
+    width: 100%;
+    background-color: #F20438;
+    padding: 15px 0;
+    color: #fff;
+    opacity: .8;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.textarea {
+    padding: 0;
+    height: 150px;
+}
+
+.slider input::placeholder {
+    color: #fff;
+    font-weight: normal;
+}
+
+.bood {
+    padding: 20px 0;
+}
+
+.bood h2 {
+    font-size: 40px;
+    color: #F20438;
+    margin: 0;
+}
+
+.bood p {
+    font-size: 17px;
+}
+
+
+/*end slider*/
+
+
+/* end page contact-me*/
+
+
+/* start Bookonline Page */
+
+.sliderbookline {
+    padding-bottom: 0;
+}
+
+.slider .header-servise {
+    font-size: 39px !important;
+    color: #000 !important;
+}
+
+.service-content {
+    background-color: #fffcfc;
+    border: 1px solid #ccc;
+    width: 600px;
+    padding: 45px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.slider .servise-item {
+    overflow: hidden;
+}
+
+.servise-item img {
+    float: left;
+    width: 50%;
+}
+
+.servise-item .desc {
+    float: left;
+    background-color: #ccc;
+    width: 50%;
+    height: 226px;
+    padding: 45px 20px 45px;
+    box-sizing: border-box;
+}
+
+.servise-item .desc p {
+    margin-bottom: 19px !important;
+}
+
+.sliderbookline {
+    padding-bottom: 0;
+}
+
+.servise-item button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+/* end Bookonline Page */
